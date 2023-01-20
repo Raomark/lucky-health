@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Global */
+
+h1 {
+  font-size: 6.5vw;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    word-spacing: 0.4vw;
+}
+
+h6 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color:#6caa7f;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+button {
+    background: #6caa7f;
+    border-style: none;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+hr {
+    background: #27ae60;
+    color: #27ae60;
+    height: 0.2rem;
+}
+
+header .intro .head h6 {
+    color: #27ae60;
+    letter-spacing: 0.3rem;
+}
+
+header .intro {
+    position: relative;
+}
+header .intro .head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fade 0.4s ease-in-out .6s forwards;
+}
+
+header .navbar .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+}
+header .navbar .navbar-nav .nav-link:hover::after {
+    width:60%;
+    height: 2px;
+    background-color: #2ecc71;
+}
+
+header .navbar .navbar-nav i {
+    font-size: 1.2rem;
+    color: #7aca8d;
+    cursor: pointer;
+}
+
+.featured .row .one {
+    height: 300px;
+    position: relative;
+}
+
+.featured .row .one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.featured .row .one .text {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.featured .row .one .text p {
+    letter-spacing: 0.2rem;
+    line-height: 2px;
+}
+.featured .row .one .text a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.featured .row .one .text a::after {
+    content: '';
+    height: 3px;
+    display: block;
+    width: 0;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+}
+.featured .row .one .text a:hover::after {
+    
+    height: 3px;
+    width: 30%;
+    background-color: #2ecc71;
+}
+
+.subscription{
+    background: #defadb;
+}
+
+.subscription .sub input {
+    outline: none;
+    border: 1px solid #6caa7f;
+}
+.subscription .sub input::placeholder {
+    font-size: 0.9rem;
+}
+
+.blog .row .post a {
+    font-size: 0.9rem;
+    color: #27ae60 ;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+}
+
+ .blog .row .side2 .row .sidetext h4 {
+    font-size: 1rem;
+ }
+ .blog .row .side2 .row .sidetext a {
+    text-decoration: none;
+    border-style: none;
+    color: #6caa7f;
+    font-size: 0.88rem;
+ }
+
+ .blog .side3 .one {
+    height: 300px;
+    position: relative;
+ }
+ .blog .side3 .one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+ }
+.copy{
+    text-decoration: none;
+}
+ .blog .side3 .one .text {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 10rem 1.1rem 0 1.1rem;
+ }
+
+ .products a , .useful-links a {
+    text-decoration: none;
+ }
+
+ @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+ .icon-menu {
+    font-size: 1.8rem;
+    border: none;
+}
+
